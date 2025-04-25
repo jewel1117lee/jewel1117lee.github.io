@@ -1,0 +1,710 @@
+/*******************************/
+/********* General CSS *********/
+/*******************************/
+body {
+    color: #797979;
+    background: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2, 
+h3, 
+h4,
+h5, 
+h6 {
+    color: #2ec4b6;
+}
+
+a {
+    color: #313131;
+    transition: .3s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #ff9f1c;
+    outline: none;
+    text-decoration: none;
+}
+
+.btn:focus,
+.form-control:focus {
+    box-shadow: none;
+}
+
+.container-fluid {
+    max-width: 1366px;
+}
+
+.btn {
+    padding: 12px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background: #ff9f1c;
+    border: 2px solid transparent;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 50px #ff9f1c;
+    transition: ease-out 0.3s;
+    -webkit-transition: ease-out 0.3s;
+    -moz-transition: ease-out 0.3s;
+}
+
+.btn:hover {
+    color: #ff9f1c;
+    background: transparent;
+    box-shadow: inset 0 0 0 0 #ff9f1c;
+    border-color: #ff9f1c;
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity .3s ease-out, visibility 0s linear .3s;
+    -o-transition: opacity .3s ease-out, visibility 0s linear .3s;
+    transition: opacity .3s ease-out, visibility 0s linear .3s;
+    z-index: 999;
+}
+
+#loader.show {
+    -webkit-transition: opacity .6s ease-out, visibility 0s linear 0s;
+    -o-transition: opacity .6s ease-out, visibility 0s linear 0s;
+    transition: opacity .6s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+#loader .loader {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border: 5px solid #dddddd;
+    border-top: 5px solid #ff9f1c;
+    border-radius: 50%;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    width: 44px;
+    height: 44px;
+    padding: 8px 0;
+    text-align: center;
+    line-height: 1;
+    font-size: 22px;
+    right: 15px;
+    bottom: 15px;
+    z-index: 9;
+}
+
+.back-to-top i {
+    color: #ffffff;
+}
+
+.back-to-top:hover i {
+    color: #414141;
+}
+
+/**********************************/
+/*********** Nav Bar CSS **********/
+/**********************************/
+.navbar {
+    position: relative;
+    transition: .5s;
+    z-index: 999;
+}
+
+.navbar.nav-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+.navbar .navbar-brand {
+    margin: 0;
+    font-size: 45px;
+    line-height: 0px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: .5s;
+    
+}
+
+.navbar .navbar-brand img {
+    max-width: 100%;
+    max-height: 40px;
+}
+
+.navbar .dropdown-menu {
+    margin-top: 0;
+    border: 0;
+    border-radius: 0;
+    background: #f8f9fa;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        position: absolute;
+        width: 100%;
+        padding: 30px 60px;
+        background: transparent !important;
+        border-bottom: 1px dashed rgba(256, 256, 256, .2);
+        z-index: 9;
+    }
+    
+    .navbar.nav-sticky {
+        padding: 10px 60px;
+        background: #ffffff !important;
+    }
+    
+    .navbar .navbar-brand {
+        color: #ffffff;
+    }
+    
+    .navbar.nav-sticky .navbar-brand {
+        color: #EF233C;
+    }
+
+    .navbar-light .navbar-nav .nav-link,
+    .navbar-light .navbar-nav .nav-link:focus {
+        padding: 10px 10px 8px 10px;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    
+    .navbar-light.nav-sticky .navbar-nav .nav-link,
+    .navbar-light.nav-sticky .navbar-nav .nav-link:focus {
+        color: #414141;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover,
+    .navbar-light .navbar-nav .nav-link.active {
+        color: #111111;
+    }
+    
+    .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
+    .navbar-light.nav-sticky .navbar-nav .nav-link.active {
+        color: #EF233C;
+    }
+}
+
+@media (max-width: 991.98px) {   
+    .navbar {
+        padding: 15px;
+        background: #ffffff !important;
+    }
+    
+    .navbar .navbar-brand {
+        color: #EF233C;
+    }
+    
+    .navbar .navbar-nav {
+        margin-top: 15px;
+    }
+    
+    .navbar a.nav-link {
+        padding: 5px;
+    }
+    
+    .navbar .dropdown-menu {
+        box-shadow: none;
+    }
+}
+
+/*******************************/
+/********** Hero CSS ***********/
+/*******************************/
+.hero {
+    position: relative;
+    width: 100%;
+    margin-bottom: 45px;
+    padding: 120px 0 0 0;
+    overflow: hidden;
+    background: linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95)), url("images/hero-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero .container-fluid {
+    padding: 0;
+}
+
+.hero .hero-image {
+    position: relative;
+    text-align: right;
+    padding-right: 75px;
+}
+
+.hero .hero-image img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.hero .hero-content {
+    position: relative;
+    padding-left: 75px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero .hero-text p {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.hero .hero-text h1 {
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+.hero .hero-text h2 {
+    display: inline-block;
+    margin: 0;
+    height: 35px;
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+/* Hide the old typed-text */
+.hero .hero-text .typed-text {
+    display: none;
+}
+
+/* pop-texts: hide initially and animate each span in */
+.hero .hero-text .pop-texts span {
+    display: inline-block;
+    opacity: 0;
+    transform: scale(0.8);
+    margin-right: 0.5rem;
+    animation: popIn 0.4s ease forwards;
+}
+
+/* Stagger each span’s animation by 0.8s */
+.hero .hero-text .pop-texts span:nth-child(1) { animation-delay: 0.8s; }
+.hero .hero-text .pop-texts span:nth-child(2) { animation-delay: 1.6s; }
+.hero .hero-text .pop-texts span:nth-child(3) { animation-delay: 2.4s; }
+.hero .hero-text .pop-texts span:nth-child(4) { animation-delay: 3.2s; }
+.hero .hero-text .pop-texts span:nth-child(5) { animation-delay: 4.0s; }
+
+/* The popIn keyframes: from small & invisible → normal size & visible */
+@keyframes popIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.hero .hero-btn .btn {
+    margin-top: 35px;
+    color: #EF233C;
+    background: #ffffff;
+    box-shadow: inset 0 0 0 50px #ffffff;
+}
+
+.hero .hero-btn .btn:hover {
+    color: #ffffff;
+    background: transparent;
+    box-shadow: inset 0 0 0 0 #ffffff;
+    border-color: #ffffff;
+}
+
+.hero .hero-btn .btn:first-child {
+    margin-right: 10px;
+}
+
+@media (max-width: 991.98px) {
+    .hero {
+        padding-top: 60px;
+    }
+    
+    .hero .hero-content {
+        padding: 0 15px;
+    }
+    
+    .hero .hero-text p {
+        font-size: 20px;
+    }
+    
+    .hero .hero-text h1 {
+        font-size: 45px;
+    }
+    
+    .hero .hero-text h2 {
+        font-size: 25px;
+        height: 25px;
+    }
+    
+    .hero .hero-btn .btn {
+        padding: 12px 30px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
+    .hero,
+    .hero .hero-text,
+    .hero .hero-btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .hero .hero-text p {
+        font-size: 18px;
+    }
+    
+    .hero .hero-text h1 {
+        font-size: 35px;
+    }
+    
+    .hero .hero-text h2 {
+        font-size: 22px;
+        height: 22px;
+    }
+    
+    .hero .hero-btn .btn {
+        padding: 10px 15px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero .hero-text p {
+        font-size: 16px;
+    }
+    
+    .hero .hero-text h1 {
+        font-size: 30px;
+    }
+    
+    .hero .hero-text h2 {
+        font-size: 18px;
+        height: 18px;
+    }
+    
+    .hero .hero-btn .btn {
+        padding: 8px 10px;
+        letter-spacing: 0;
+    }
+}
+
+/*******************************/
+/******* Section Header ********/
+/*******************************/
+.section-header {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.section-header p {
+    display: inline-block;
+    margin: 0 30px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: #ffffff;
+}
+
+.section-header p::before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    top: 11px;
+    right: 0;
+    left: -30px;
+    background: #EF233C;
+    z-index: -1;
+}
+
+.section-header p::after {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 3px;
+    top: 11px;
+    left: 3px;
+    background: #EF233C;
+    z-index: 1;
+}
+
+.section-header h2 {
+    margin: 0;
+    position: relative;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+    .section-header h2 {
+        font-size: 30px;
+    }
+}
+
+
+/*******************************/
+/********** About CSS **********/
+/*******************************/
+.about {
+    position: relative;
+    width: 100%;
+    margin: -45px 0 45px 0;
+    background: #ffffff;
+}
+
+.about .col-lg-6 {
+    padding: 0;
+}
+
+.about .section-header {
+    margin-bottom: 30px;
+}
+
+.about .about-img {
+    position: relative;
+    height: 100%;
+}
+
+.about .about-img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .about-content {
+    padding: 0 60px;
+}
+
+.about .about-text p {
+    font-size: 16px;
+}
+
+.about .skills {
+    margin-bottom: 30px;
+}
+
+.about .skill-name {
+    margin-top: 15px;
+}
+
+.about .skill-name p {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.about .skill-name p:last-child {
+    float: right;
+}
+
+.about .progress {
+    height: 10px;
+    border-radius: 10px;
+    background: #dddddd;
+}
+
+.about .progress .progress-bar {
+    width: 0px;
+    background: #EF233C;
+    border-radius: 10px;
+    transition: 2s;
+}
+
+.about .about-text a.btn {
+    margin-top: 15px;
+}
+
+@media (max-width: 991.98px) {
+    .about .about-content {
+        padding: 45px 15px 0 15px;
+    }
+}
+
+/* Grid: two columns of five items */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+  }
+  
+  /* Center each donut + label */
+  .skill-circle {
+    text-align: center;
+  }
+  
+  /* Size the SVG donut */
+  .circular-chart {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+  }
+  
+  /* Background circle */
+  .circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+  }
+  
+  /* Foreground circle (the “donut” fill) */
+  .circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: center;
+    animation: fillCircle 1s ease-out forwards;
+  }
+  
+  /* Two color themes */
+  .circular-chart.teal .circle { stroke: #4db6ac; }
+  .circular-chart.orange .circle { stroke: #f79747; }
+  
+  /* Percentage text */
+  .percentage {
+    font-size: 0.5em;
+    text-anchor: middle;
+    fill: #333;
+  }
+  
+  /* Simple pop-in animation */
+  @keyframes fillCircle {
+    from { stroke-dasharray: 0, 100; }
+    to   { /* final dasharray already set in SVG */     }
+  }
+
+  
+/* ----- Portfolio Styles ----- */
+.portfolio {
+  padding: 4rem 0;
+}
+.section-header p {
+  font-size: 1rem;
+  color: #ff9f1c;
+  margin-bottom: .5rem;
+}
+.section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Filter tabs */
+#portfolio-filter {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+#portfolio-filter li {
+  margin: 0 .5rem;
+  padding: .5rem 1rem;
+  cursor: pointer;
+  transition: background .3s, color .3s;
+}
+#portfolio-filter li.filter-active,
+#portfolio-filter li:hover {
+  background: #ff9f1c;
+  color: #fff;
+}
+
+/* Grid */
+.portfolio-container {
+  margin: 0 -15px;
+}
+.portfolio-item {
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+/* Image wrap & hover */
+.portfolio-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-img img {
+  width: 100%;
+  display: block;
+  transition: transform .3s ease;
+}
+.portfolio-wrap:hover .portfolio-img img {
+  transform: scale(1.1);
+}
+
+/* Overlay text + button */
+.portfolio-text {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.6);
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.portfolio-wrap:hover .portfolio-text {
+  opacity: 1;
+}
+.portfolio-text h3 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+.portfolio-text .btn {
+  width: 50px; height: 50px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ensure lightbox + animate.css already linked */
