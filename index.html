@@ -15,6 +15,8 @@
   
   <!--Link the website with style sheet-->>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
+/>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -255,87 +257,398 @@
 
   <!--Portfolio-->
  <!-- Portfolio Start -->
-<section id="portfolio" class="portfolio">
-  <div class="container">
-    <!-- Section header + wow zoomIn -->
-    <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-      <p>Portfolio</p>
-      <h2>My Portfolio</h2>
-    </div>
-
-    <!-- Filter tabs -->
-    <div class="row">
-      <div class="col-12">
-        <ul id="portfolio-filter">
-          <li data-filter="*" class="filter-active">All</li>
-          <li data-filter=".protocols">Protocols</li>
-          <li data-filter=".graphics">Graphics</li>
-        </ul>
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <!-- Section header + wow zoomIn -->
+      <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+        <p>Portfolio</p>
+        <h2>My Portfolio</h2>
       </div>
-    </div>
 
-    <!-- Grid -->
-    <div class="row portfolio-container">
-      <!-- Sample Protocol -->
-      <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item protocols wow fadeInUp" data-wow-delay="0.2s">
-        <div class="portfolio-wrap">
-          <div class="portfolio-img">
-            <img src="images/science protocol/hippocampal cell culture.png" alt="Hippocampal Cell Culture Protocol">
-          </div>
-          <div class="portfolio-text">
-            <h3>Hippocampal Cell Culture</h3>
-            <a class="btn" href="images/science protocol/hippocampal cell culture.png" data-lightbox="portfolio">+</a>
-          </div>
-        </div>
-        <div class="portfolio-wrap">
-          <div class="portfolio-img">
-            <img src="images/science protocol/hippocampal cell culture.png" alt="Hippocampal Cell Culture Protocol">
-          </div>
-          <div class="portfolio-text">
-            <h3>Hippocampal Cell Culture</h3>
-            <a class="btn" href="images/science protocol/hippocampal cell culture.png" data-lightbox="portfolio">+</a>
+      <!-- Filter tabs -->
+      <ul id="portfolio-filter">
+        <li data-filter="*" class="filter-active">All</li>
+        <li data-filter=".protocols">Protocols</li>
+        <li data-filter=".graphics">Graphics</li>
+      </ul>
+
+      <!-- Grid -->
+      <div class="portfolio-container">
+        <!-- Sample Protocol -->
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item protocols wow fadeInUp" data-wow-delay="0.2s">
+          <div class="portfolio-wrap">
+            <div class="portfolio-img">
+              <img src="images/science protocol/hippocampal cell culture.png" alt="Hippocampal Cell Culture Protocol">
+            </div>
+            <div class="portfolio-text">
+              <h3>Hippocampal Cell Culture</h3>
+              <a class="btn" href="images/science protocol/hippocampal cell culture.png" data-lightbox="portfolio">+</a>
+            </div>
           </div>
         </div>
         
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item protocols wow fadeInUp" data-wow-delay="0.4s">
+          <div class="portfolio-wrap">
+            <div class="portfolio-img">
+              <img src="images/science protocol/immunocytochemistry.png" alt="Hippocampal Cell Culture Protocol">
+            </div>
+            <div class="portfolio-text">
+              <h3>Immunocytochemistry</h3>
+              <a class="btn" href="images/science protocol/immunocytochemistry.png" data-lightbox="portfolio">+</a>
+            </div>
+          </div>  
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item protocols wow fadeInUp" data-wow-delay="0.4s">
+          <div class="portfolio-wrap">
+            <div class="portfolio-img">
+              <img src="images/science protocol/sucrose sedimentation.png" alt="Hippocampal Cell Culture Protocol">
+            </div>
+            <div class="portfolio-text">
+              <h3>Sucrose Sedimentation Assay</h3>
+              <a class="btn" href="images/science protocol/sucrose sedimentation.png" data-lightbox="portfolio">+</a>
+            </div>
+          </div>  
+        </div>
+        
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item protocols wow fadeInUp" data-wow-delay="0.4s">
+          <div class="portfolio-wrap">
+            <div class="portfolio-img">
+              <img src="images/science protocol/Westernblot simple.png" alt="Hippocampal Cell Culture Protocol">
+            </div>
+            <div class="portfolio-text">
+              <h3>Westernblot</h3>
+              <a class="btn" href="images/science protocol/Westernblot simple.png" data-lightbox="portfolio">+</a>
+            </div>
+          </div>  
+        </div>
+
+        <!-- Repeat for each protocol -->
+        <!-- … -->
+
+        <!-- Science Graphic -->
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item graphics wow fadeInUp" data-wow-delay="0.4s">
+          <div class="portfolio-wrap">
+            <div class="portfolio-img">
+              <img src="images/science graphics/15ml falcon tube.png" alt="15ml Falcon Tube">
+            </div>
+            <div class="portfolio-text">
+              <h3>15ml Falcon Tube</h3>
+              <a class="btn" href="images/science graphics/15ml falcon tube.png" data-lightbox="portfolio">+</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item graphics wow fadeInUp" data-wow-delay="0.4s">
+          <div class="portfolio-wrap">
+            <div class="portfolio-img">
+              <img src="images/science graphics/50ml falcon tube.png" alt="15ml Falcon Tube">
+            </div>
+            <div class="portfolio-text">
+              <h3>15ml Falcon Tube</h3>
+              <a class="btn" href="images/science graphics/50ml falcon tube.png" data-lightbox="portfolio">+</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item graphics wow fadeInUp" data-wow-delay="0.4s">
+          <div class="portfolio-wrap">
+            <div class="portfolio-img">
+              <img src="images/science graphics/confocal microscopy.png" alt="15ml Falcon Tube">
+            </div>
+            <div class="portfolio-text">
+              <h3>Confocal Microscopy</h3>
+              <a class="btn" href="images/science graphics/confocal microscopy.png" data-lightbox="portfolio">+</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item graphics wow fadeInUp" data-wow-delay="0.4s">
+          <div class="portfolio-wrap">
+            <div class="portfolio-img">
+              <img src="images/science graphics/translating polysome.png" alt="15ml Falcon Tube">
+            </div>
+            <div class="portfolio-text">
+              <h3>Translating Ribosomes/h3>
+              <a class="btn" href="images/science graphics/translating polysome.png" data-lightbox="portfolio">+</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item graphics wow fadeInUp" data-wow-delay="0.4s">
+          <div class="portfolio-wrap">
+            <div class="portfolio-img">
+              <img src="images/science graphics/test tube and gradient.png" alt="15ml Falcon Tube">
+            </div>
+            <div class="portfolio-text">
+              <h3>Test Tube & Gradient</h3>
+              <a class="btn" href="images/science graphics/test tube and gradient.png" data-lightbox="portfolio">+</a>
+            </div>
+          </div>
+        </div>    
+
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item graphics wow fadeInUp" data-wow-delay="0.4s">
+          <div class="portfolio-wrap">
+            <div class="portfolio-img">
+              <img src="images/science graphics/gel electrophoresis westernblot.png" alt="15ml Falcon Tube">
+            </div>
+            <div class="portfolio-text">
+              <h3>Gel Electrophoresis</h3>
+              <a class="btn" href="images/science graphics/gel electrophoresis westernblot.png" data-lightbox="portfolio">+</a>
+            </div>
+          </div>
+        </div>    
+
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item graphics wow fadeInUp" data-wow-delay="0.4s">
+          <div class="portfolio-wrap">
+            <div class="portfolio-img">
+              <img src="images/science graphics/westernblot sandwich.png" alt="15ml Falcon Tube">
+            </div>
+            <div class="portfolio-text">
+              <h3>Westernblot Sandwich</h3>
+              <a class="btn" href="images/science graphics/westernblot sandwich.png" data-lightbox="portfolio">+</a>
+            </div>
+          </div>
+        </div>      
+
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item graphics wow fadeInUp" data-wow-delay="0.4s">
+          <div class="portfolio-wrap">
+            <div class="portfolio-img">
+              <img src="images/science graphics/western blot transfer.png" alt="15ml Falcon Tube">
+            </div>
+            <div class="portfolio-text">
+              <h3>Westernblot Transfer</h3>
+              <a class="btn" href="images/science graphics/western blot transfer.png" data-lightbox="portfolio">+</a>
+            </div>
+          </div>
+        </div> 
+
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item graphics wow fadeInUp" data-wow-delay="0.4s">
+          <div class="portfolio-wrap">
+            <div class="portfolio-img">
+              <img src="images/science graphics/mouse brain.png" alt="15ml Falcon Tube">
+            </div>
+            <div class="portfolio-text">
+              <h3>Mouse Brain</h3>
+              <a class="btn" href="images/science graphics/mouse brain.png" data-lightbox="portfolio">+</a>
+            </div>
+          </div>
+        </div> 
+
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item graphics wow fadeInUp" data-wow-delay="0.4s">
+          <div class="portfolio-wrap">
+            <div class="portfolio-img">
+              <img src="images/science graphics/hemisphere.png" alt="15ml Falcon Tube">
+            </div>
+            <div class="portfolio-text">
+              <h3>Mouse Hemisphere</h3>
+              <a class="btn" href="images/science graphics/hemisphere.png" data-lightbox="portfolio">+</a>
+            </div>
+          </div>
+        </div> 
+
+      </div>
+    </div>
+
+  <!--Publication start-->
+  <div class="publication" id="publication">
+    <div class="container">
+      <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+        <p>My Contribution to Science</p>
+        <h2>My Publication</h2>
       </div>
 
-      <!-- Repeat for each protocol -->
-      <!-- … -->
+      <div class="row">
+        
+        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="publication-item">
+            <div class="publication-header">
+              <div class="publication-title">
+                <h2>Ribosomes in RNA Granules Are Stalled on mRNA Squences That Are Consensus Sites for FMRP Association</h2>
+              </div>
+            </div>
+            
+            <div class="publication-body">
+              <div class="publication description">
+                <ul>
+                  <li>placement</li>
+                  <li>placement</li>
+                  <li>placement</li>
+                  <li>placement</li>
+                <ul>
+              </div>
+            </div>
+            
+            <div class="publication-footer">
+              <div class="publication-action">
+                <a class="btn" href="">link</a>
+              </div>
+            </div>
+          </div>  
+        </div>
 
-      <!-- Science Graphic -->
-      <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item graphics wow fadeInUp" data-wow-delay="0.4s">
-        <div class="portfolio-wrap">
-          <div class="portfolio-img">
-            <img src="images/science graphics/15ml falcon tube.png" alt="15ml Falcon Tube">
+        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="publication-item">
+            <div class="publication-header">
+              <div class="publication-title">
+                <h2>Ribosomes in RNA Granules Are Stalled on mRNA Squences That Are Consensus Sites for FMRP Association</h2>
+              </div>
+            </div>
+            <div class="publication-body">
+              <div class="publication description">
+                <ul>
+                  <li>placement</li>
+                  <li>placement</li>
+                  <li>placement</li>
+                  <li>placement</li>
+                <ul>
+              </div>
+            </div>
+            <div class="publication-footer">
+              <div class="publication-action">
+                <a class="btn" href="">link</a>
+              </div>
+            </div>
+          </div>  
+        </div>
+
+        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="publication-item">
+            <div class="publication-header">
+              <div class="publication-title">
+                <h2>Ribosomes in RNA Granules Are Stalled on mRNA Squences That Are Consensus Sites for FMRP Association</h2>
+              </div>
+            </div>
+            <div class="publication-body">
+              <div class="publication description">
+                <ul>
+                  <li>placement</li>
+                  <li>placement</li>
+                  <li>placement</li>
+                  <li>placement</li>
+                <ul>
+                </div>
+            </div>
+            <div class="publication-footer">
+              <div class="publication-action">
+                <a class="btn" href="">link</a>
+              </div>
+            </div>
+          </div>  
+        </div>
+
+      </div>
+    </div>
+  <!--Publication end-->
+
+  <!--Education start-->
+  <div class="education" id="education">
+    <div class="container">
+      <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+        <p>My Training</p>
+        <h2>My Experience in Science & Coding</h2>
+      </header>
+      <div class="timeline">
+        <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+          <div class="timeline-text">
+            <div class="timeline-date">2021 - 2022</div>
+            <h2>1.Coauthor<h2>
+            <h4>Ribosomes in RNA Granules Are Stalled on mRNA Squences That Are Consensus Sites for FMRP Association<h4>
+            <p>
+              Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+            </p>
           </div>
-          <div class="portfolio-text">
-            <h3>15ml Falcon Tube</h3>
-            <a class="btn" href="images/science graphics/15ml falcon tube.png" data-lightbox="portfolio">+</a>
+        </div>
+
+        <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+          <div class="timeline-text">
+            <div class="timeline-date">2021 - 2022</div>
+            <h2>2.Coauthor<h2>
+            <h4>Ribosomes in RNA Granules Are Stalled on mRNA Squences That Are Consensus Sites for FMRP Association<h4>
+            <p>
+              Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+            </p>
+          </div>
+        </div>
+        
+        <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+          <div class="timeline-text">
+            <div class="timeline-date">2021 - 2022</div>
+            <h2>3.Coauthor<h2>
+            <h4>Ribosomes in RNA Granules Are Stalled on mRNA Squences That Are Consensus Sites for FMRP Association<h4>
+            <p>
+              Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+            </p>
           </div>
         </div>
       </div>
-
-      <!-- Repeat for each graphic -->
-      <!-- … -->
     </div>
   </div>
-</section>
-<!-- Portfolio End -->
+  <!--Publication Ends-->
 
-      <!-- …repeat items… -->
+  <!--Contact-->
+  <!-- Contact Start -->
+  <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4"></div>
+                <div class="col-md-8">
+                    <div class="contact-form">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="control-group">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                <p class="help-block"></p>
+                            </div>
+                            <div class="control-group">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                <p class="help-block"></p>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                                <p class="help-block"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                <p class="help-block"></p>
+                            </div>
+                            <div>
+                                <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
   </div>
-</section>
-<!-- Portfolio End -->
-  </section>
-  
-      
+  <!-- Contact End -->  
+
+  <!-- Footer Start -->
+  <div class="footer wow fadeIn" data-wow-delay="0.3s">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="footer-info">
+                <h2>Jewel Li</h2>
+                <div class="footer-menu">
+                    <p>info@example.com</p>
+                    <p>info@example.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved | Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
+        </div>
+    </div>
+  </div>
+  <!-- Footer End -->
 
 
-                            
+  <!-- Back to top button -->
+  <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
 
 
-  <!-- …other sections go here… -->
 
 
   <!-- 1) jQuery (required by everything below) -->
@@ -377,6 +690,21 @@
       var filterValue = $(this).attr('data-filter');
       $grid.isotope({ filter: filterValue });
     });
+
+    $(window).on('scroll', function() {
+      if ($(this).scrollTop() > 200) {
+        $('.back-to-top').fadeIn('fast');
+      } else {
+        $('.back-to-top').fadeOut('fast');
+      }
+    });
+
+    $('.back-to-top').on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: 0 }, 600);
+      return false;
+    });
+    
   </script>
 </body>
 </html>
