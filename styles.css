@@ -587,7 +587,6 @@ a:focus {
     stroke-linecap: round;
     transform: rotate(-90deg);
     transform-origin: center;
-    animation: fillCircle 1s ease-out forwards;
   }
   
   /* Two color themes */
@@ -1004,10 +1003,10 @@ a:focus {
 .contact .container-fluid {
     background: url(images/contact.jpg) left center no-repeat;
     background-size: 200px auto;
-    background-position: left 2rem center;
+    background-position: 8rem center;
   
     /* if you still need content padding: */
-    padding: 3rem 1rem; 
+    padding: 1rem;
 }
 
 .contact .contact-form {
@@ -1084,8 +1083,24 @@ a:focus {
 .footer {
     position: relative;
     margin-top: 45px;
-    background: #ff9f1c;
+    background: linear-gradient(
+        60deg,
+        #2ec4b6,
+        #ff9f1c,
+        #fb8500,
+        #2ec4b6
+    );
+    background-size: 400% 400%;    
+    animation: gradientShift 10s ease infinite;
 }
+
+@keyframes gradientShift {
+    0%   { background-position:   0%  50%; }
+    25%  { background-position:  50%   0%; }
+    50%  { background-position: 100%  50%; }
+    75%  { background-position:  50% 100%; }
+    100% { background-position:   0%  50%; }
+  }
 
 .footer .container-fluid {
     padding: 60px 0 0 0;
@@ -1217,8 +1232,8 @@ a:focus {
     width: 45px;
     height: 45px;
     line-height: 45px;
-    background: #414141;
-    color: #fff;
+    background: #ffff;
+    color: #ffff;
     text-align: center;
     border-radius: 50%;
     cursor: pointer;
