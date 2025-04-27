@@ -246,14 +246,26 @@ a:focus {
     margin-bottom: 45px;
     padding: 120px 0 0 0;
     overflow: hidden;
-    background: 
-        linear-gradient(rgba(46, 196, 182, 1) ,rgba(46, 196, 182, 1)
-        );
+    background: linear-gradient(
+        60deg,
+        #2ec4b6,
+        #ff9f1c,
+        #fb8500,
+        #2ec4b6
+    );
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-}
+    background-size: 400% 400%;
+    animation: gradientShift 10s ease infinite;
 
+}
+@keyframes gradientShift {
+    0%   { background-position:   0%  50%; }
+    25%  { background-position:  50%   0%; }
+    50%  { background-position: 100%  50%; }
+    75%  { background-position:  50% 100%; }
+    100% { background-position:   0%  50%; }
+  }
 .hero .container-fluid {
     padding: 0;
 }
@@ -312,6 +324,11 @@ a:focus {
     transform: scale(0.8);
     margin-right: 0.5rem;
     animation: popIn 0.4s ease forwards;
+
+    /* ← new: bigger & darker */
+    font-size: 2rem;       /* increase to taste */
+    color: #333333;        /* darker gray/black */
+    font-weight: 600;      /* optionally bolder */
 }
 
 /* Stagger each span’s animation by 0.8s */
@@ -504,14 +521,17 @@ a:focus {
 
 .about .about-img {
     position: relative;
-    height: 100%;
+    height:100%;
+    width: auto;
+    padding: 4rem;
+    margin-left: 4rem;        /* adjust to taste */
+    box-sizing: border-box; /* include padding in width/height calculations */
 }
 
 .about .about-img img {
-    position: relative;
+    display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
 }
 
 .about .about-content {
@@ -522,40 +542,8 @@ a:focus {
     font-size: 16px;
 }
 
-.about .skills {
-    margin-bottom: 30px;
-}
-
-.about .skill-name {
-    margin-top: 15px;
-}
-
-.about .skill-name p {
-    display: inline-block;
-    margin-bottom: 5px;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.about .skill-name p:last-child {
-    float: right;
-}
-
-.about .progress {
-    height: 10px;
-    border-radius: 10px;
-    background: #dddddd;
-}
-
-.about .progress .progress-bar {
-    width: 0px;
-    background: #EF233C;
-    border-radius: 10px;
-    transition: 2s;
-}
-
 .about .about-text a.btn {
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 @media (max-width: 991.98px) {
@@ -1002,17 +990,21 @@ a:focus {
     position: relative;
     width: 100%;
     margin: 45px 0;
-    background: #ff9f1c;
+    background: #ffffff;
 }
 
 .contact .container-fluid {
     background: url(images/contact.jpg) left center no-repeat;
     background-size: contain;
+    background-position: left 2rem center;
+  
+    /* if you still need content padding: */
+    padding: 3rem 1rem; 
 }
 
 .contact .contact-form {
     position: relative;
-    padding: 90px 0 90px 45px;
+    padding: 90px 0 90px 60px;
     background: #ff9f1c;
 }
 
