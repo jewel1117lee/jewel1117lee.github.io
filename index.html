@@ -1,727 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Jewel's Learning Journey</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jewel's Learning Journey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Favicon, fonts, libraries, your CSS… -->
-  <link href="img/favicon.ico" rel="icon">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet" />
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-  
-  <!--Link the website with style sheet-->>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"/>
-</head>
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
 
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
- 
-  <!-- Nav Bar Start -->
-  <nav class="navbar navbar-expand-lg bg-light navbar-light">
-    <div class="container-fluid">
-      <a href="index.html" class="navbar-brand">Jewel's Website</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-        <div class="navbar-nav ml-auto">
-          <a href="#home" class="nav-item nav-link active">Home</a>
-          <a href="#about" class="nav-item nav-link">About</a>
-          <a href="#skills" class="nav-item nav-link">Skills</a>
-          <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-          <a href="#publication" class="nav-item nav-link">Publication</a>
-          <a href="#education" class="nav-item nav-link">Education</a>
-          <a href="#contact" class="nav-item nav-link">Contact</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <!-- Nav Bar End -->
+    <!-- CSS Libraries -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
 
-  <!-- Hero Start -->
-  <section class="hero" id="home">
-    <div class="container-fluid">
-      <div class="row align-items-center">
-        <div class="col-sm-12 col-md-6">
-          <div class="hero-content">
-            <div class="hero-text">
-              <p>I'm</p>
-              <h1>Jewel Li!</h1>
-              <h2></h2>
-              <div class="pop-texts">
-                <span>Science</span>
-                <span>Data Analyst</span>
-                <span>Graphic Design</span>
-              </div>
-            </div>
-            <div class="hero-btn">
-              <a class="btn" href="https://github.com/jewel1117lee">Git-hub</a>
-              <a class="btn" href="https://www.linkedin.com/in/jewel-tian-yi-li/">LinkedIn</a>
-            </div>
-          </div>
-        </div>
-        <!-- if you have a right‐column image, put it here as col‐6 -->
-        <div class="col-sm-12 col-md-6 d-none d-md-block">
-          <div class="hero-image">
-            <img src="images/self_portrait.png" alt="Hero Image">
-        
+    <!-- Link the website with style sheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Nav Bar Start -->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">Jewel's Website</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarCollapse"
+        >
+          <div class="navbar-nav ml-auto">
+            <a href="#home" class="nav-item nav-link active">Home</a>
+            <a href="#about" class="nav-item nav-link">About</a>
+            <a href="#skills" class="nav-item nav-link">Skills</a>
+            <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+            <a href="#publication" class="nav-item nav-link">Publication</a>
+            <a href="#education" class="nav-item nav-link">Education</a>
+            <a href="#contact" class="nav-item nav-link">Contact</a>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <!-- Hero End -->
+    </nav>
+    <!-- Nav Bar End -->
 
-  <!-- About Start-->
-  <section class="about" id="about">
-    <div class="container-fluid">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <div class="about-img">
-            <img src="images/about.jpg" alt="Image">
-          </div>
-        </div>
-        <!--should probably find sth for this-->
-        <div class="col-lg-6">
-          <div class="about-content">
-            <div class="section-header text left">
-              <p>Who Am I</p>
-              <!--You probably should write sth about yourself-->
-              <h2>About Me</h2>
-            </div>
-            <div class="about-text">
-              <p>
-                I am a scientist, coder, and artist driven by curiosity, creativity,
-                 and the thrill of innovation. With a solid foundation in biotechnology
-                  and computational skills, I thrive at the intersection of biology,
-                   technology, and design—always looking for exciting new ways to solve
-                    challenging problems. My passion for scientific discovery combined with
-                     my coding expertise enables me to transform complex data into meaningful
-                      insights, while my artistic side ensures I present ideas clearly and 
-                      creatively. I enjoy collaborative environments, value continuous learning,
-                       and am eager to contribute to a dynamic team where I can leverage my 
-                       interdisciplinary skills to make a real impact.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!--Skills-->>
-  <section class="skills" id="skills">
-    <div class="container">
-      <div class="section-header text-center wow zoomIn" data-wow-delay="0.4s">
-        <p>What I learned</p>
-        <h2>My Technical Skills</h2>
-      </div>
-      <div class="skills-grid">
-      <!-- Left column (5 skills) -->
-      <div class="skill-circle" data-percent="85">
-        <svg viewBox="0 0 36 36" class="circular-chart teal">
-          <path class="circle-bg"
-                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831
-                   a 15.9155 15.9155 0 0 1 0 -31.831"/>
-          <path class="circle"
-                stroke-dasharray="85, 100"
-                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831
-                   a 15.9155 15.9155 0 0 1 0 -31.831"/>
-          <text x="18" y="20.35" class="percentage">85%</text>
-        </svg>
-        <p>Molecular biology</p>
-      </div>
-  
-      <div class="skill-circle" data-percent="75">
-        <svg viewBox="0 0 36 36" class="circular-chart teal">
-          <path class="circle-bg"
-                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831
-                   a 15.9155 15.9155 0 0 1 0 -31.831"/>
-          <path class="circle"
-                stroke-dasharray="75, 100"
-                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831
-                   a 15.9155 15.9155 0 0 1 0 -31.831"/>
-          <text x="18" y="20.35" class="percentage">75%</text>
-        </svg>
-        <p>Protein Biochemistry</p>
-      </div>
-  
-      <div class="skill-circle" data-percent="85">
-        <svg viewBox="0 0 36 36" class="circular-chart teal">
-          <path class="circle-bg"
-                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831
-                   a 15.9155 15.9155 0 0 1 0 -31.831"/>
-          <path class="circle"
-                stroke-dasharray="85, 100"
-                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831
-                   a 15.9155 15.9155 0 0 1 0 -31.831"/>
-          <text x="18" y="20.35" class="percentage">90%</text>
-        </svg>
-        <p>Cell Culture</p>
-      </div>
-  
-      <div class="skill-circle" data-percent="85">
-        <svg viewBox="0 0 36 36" class="circular-chart teal">
-          <path class="circle-bg"
-                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831
-                   a 15.9155 15.9155 0 0 1 0 -31.831"/>
-          <path class="circle"
-                stroke-dasharray="85, 100"
-                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831
-                   a 15.9155 15.9155 0 0 1 0 -31.831"/>
-          <text x="18" y="20.35" class="percentage">85%</text>
-        </svg>
-        <p>Experimental Design</p>
-      </div>
-  
-      <div class="skill-circle" data-percent="90">
-        <svg viewBox="0 0 36 36" class="circular-chart teal">
-          <path class="circle-bg"
-                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831
-                   a 15.9155 15.9155 0 0 1 0 -31.831"/>
-          <path class="circle"
-                stroke-dasharray="80, 100"
-                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831
-                   a 15.9155 15.9155 0 0 1 0 -31.831"/>
-          <text x="18" y="20.35" class="percentage">90%</text>
-        </svg>
-        <p>Science Communication/Writing</p>
-      </div>
-  
-      <!-- Right column (5 more skills) -->
-      <div class="skill-circle" data-percent="75">
-        <svg viewBox="0 0 36 36" class="circular-chart orange">
-          <path class="circle-bg"
-                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831
-                   a 15.9155 15.9155 0 0 1 0 -31.831"/>
-          <path class="circle"
-                stroke-dasharray="75, 100"
-                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831
-                   a 15.9155 15.9155 0 0 1 0 -31.831"/>
-          <text x="18" y="20.35" class="percentage">75%</text>
-        </svg>
-        <p>Programming in Python</p>
-      </div>
-  
-      <div class="skill-circle" data-percent="70">
-        <svg viewBox="0 0 36 36" class="circular-chart orange">
-          <path class="circle-bg"
-                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831
-                   a 15.9155 15.9155 0 0 1 0 -31.831"/>
-          <path class="circle"
-                stroke-dasharray="70, 100"
-                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831
-                   a 15.9155 15.9155 0 0 1 0 -31.831"/>
-          <text x="18" y="20.35" class="percentage">70%</text>
-        </svg>
-        <p>Statistical Analysis with R</p>
-      </div>
-  
-      <div class="skill-circle" data-percent="65">
-        <svg viewBox="0 0 36 36" class="circular-chart orange">
-          <path class="circle-bg"
-                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831
-                   a 15.9155 15.9155 0 0 1 0 -31.831"/>
-          <path class="circle"
-                stroke-dasharray="65, 100"
-                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831
-                   a 15.9155 15.9155 0 0 1 0 -31.831"/>
-          <text x="18" y="20.35" class="percentage">65%</text>
-        </svg>
-        <p>Bioinformatics</p>
-      </div>
-  
-      <div class="skill-circle" data-percent="60">
-        <svg viewBox="0 0 36 36" class="circular-chart orange">
-          <path class="circle-bg"
-                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831
-                   a 15.9155 15.9155 0 0 1 0 -31.831"/>
-          <path class="circle"
-                stroke-dasharray="60, 100"
-                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831
-                   a 15.9155 15.9155 0 0 1 0 -31.831"/>
-          <text x="18" y="20.35" class="percentage">60%</text>
-        </svg>
-        <p>High-performance Computing</p>
-      </div>
-  
-      <div class="skill-circle" data-percent="95">
-        <svg viewBox="0 0 36 36" class="circular-chart orange">
-          <path class="circle-bg"
-                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831
-                   a 15.9155 15.9155 0 0 1 0 -31.831"/>
-          <path class="circle"
-                stroke-dasharray="95, 100"
-                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831
-                   a 15.9155 15.9155 0 0 1 0 -31.831"/>
-          <text x="18" y="20.35" class="percentage">95%</text>
-        </svg>
-        <p>Project Management</p>
-      </div>
-    </div>
-
-  <!--Portfolio-->
- <!-- Portfolio Start -->
-  <section id="portfolio" class="portfolio">
-    <div class="container">
-      <!-- Section header + wow zoomIn -->
-      <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-        <p>Portfolio</p>
-        <h2>My Portfolio</h2>
-        <h4>All of the graphics here are self-designed using Adobe</h4>
-      </div>
-
-      <!-- Filter tabs -->
-      <ul id="portfolio-filter">
-        <li data-filter="*" class="filter-active">All</li>
-        <li data-filter=".protocols">Protocols</li>
-        <li data-filter=".graphics">Graphics</li>
-      </ul>
-
-      <!-- Grid -->
-      <div class="portfolio-container">
-        <!-- Sample Protocol -->
-        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item protocols wow fadeInUp" data-wow-delay="0.2s">
-          <div class="portfolio-wrap">
-            <div class="portfolio-img">
-              <img src="images/science protocol/hippocampal cell culture.png" alt="Hippocampal Cell Culture Protocol">
-            </div>
-            <div class="portfolio-text">
-              <h3>Hippocampal Cell Culture</h3>
-              <a class="btn" href="images/science protocol/hippocampal cell culture.png" data-lightbox="portfolio">+</a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item protocols wow fadeInUp" data-wow-delay="0.4s">
-          <div class="portfolio-wrap">
-            <div class="portfolio-img">
-              <img src="images/science protocol/immunocytochemistry.png" alt="Hippocampal Cell Culture Protocol">
-            </div>
-            <div class="portfolio-text">
-              <h3>Immunocytochemistry</h3>
-              <a class="btn" href="images/science protocol/immunocytochemistry.png" data-lightbox="portfolio">+</a>
-            </div>
-          </div>  
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item protocols wow fadeInUp" data-wow-delay="0.4s">
-          <div class="portfolio-wrap">
-            <div class="portfolio-img">
-              <img src="images/science protocol/sucrose sedimentation.png" alt="Hippocampal Cell Culture Protocol">
-            </div>
-            <div class="portfolio-text">
-              <h3>Sucrose Sedimentation Assay</h3>
-              <a class="btn" href="images/science protocol/sucrose sedimentation.png" data-lightbox="portfolio">+</a>
-            </div>
-          </div>  
-        </div>
-        
-        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item protocols wow fadeInUp" data-wow-delay="0.4s">
-          <div class="portfolio-wrap">
-            <div class="portfolio-img">
-              <img src="images/science protocol/Westernblot simple.png" alt="Hippocampal Cell Culture Protocol">
-            </div>
-            <div class="portfolio-text">
-              <h3>Westernblot</h3>
-              <a class="btn" href="images/science protocol/Westernblot simple.png" data-lightbox="portfolio">+</a>
-            </div>
-          </div>  
-        </div>
-
-        <!-- Repeat for each protocol -->
-        <!-- … -->
-
-        <!-- Science Graphic -->
-        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item graphics wow fadeInUp" data-wow-delay="0.4s">
-          <div class="portfolio-wrap">
-            <div class="portfolio-img">
-              <img src="images/science graphics/15ml falcon tube.png" alt="15ml Falcon Tube">
-            </div>
-            <div class="portfolio-text">
-              <h3>15ml Falcon Tube</h3>
-              <a class="btn" href="images/science graphics/15ml falcon tube.png" data-lightbox="portfolio">+</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item graphics wow fadeInUp" data-wow-delay="0.4s">
-          <div class="portfolio-wrap">
-            <div class="portfolio-img">
-              <img src="images/science graphics/50ml falcon tube.png" alt="15ml Falcon Tube">
-            </div>
-            <div class="portfolio-text">
-              <h3>15ml Falcon Tube</h3>
-              <a class="btn" href="images/science graphics/50ml falcon tube.png" data-lightbox="portfolio">+</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item graphics wow fadeInUp" data-wow-delay="0.4s">
-          <div class="portfolio-wrap">
-            <div class="portfolio-img">
-              <img src="images/science graphics/confocal microscopy.png" alt="15ml Falcon Tube">
-            </div>
-            <div class="portfolio-text">
-              <h3>Confocal Microscopy</h3>
-              <a class="btn" href="images/science graphics/confocal microscopy.png" data-lightbox="portfolio">+</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item graphics wow fadeInUp" data-wow-delay="0.4s">
-          <div class="portfolio-wrap">
-            <div class="portfolio-img">
-              <img src="images/science graphics/translating polysome.png" alt="15ml Falcon Tube">
-            </div>
-            <div class="portfolio-text">
-              <h3>Translating Ribosomes/h3>
-              <a class="btn" href="images/science graphics/translating polysome.png" data-lightbox="portfolio">+</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item graphics wow fadeInUp" data-wow-delay="0.4s">
-          <div class="portfolio-wrap">
-            <div class="portfolio-img">
-              <img src="images/science graphics/test tube and gradient.png" alt="15ml Falcon Tube">
-            </div>
-            <div class="portfolio-text">
-              <h3>Test Tube & Gradient</h3>
-              <a class="btn" href="images/science graphics/test tube and gradient.png" data-lightbox="portfolio">+</a>
-            </div>
-          </div>
-        </div>    
-
-        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item graphics wow fadeInUp" data-wow-delay="0.4s">
-          <div class="portfolio-wrap">
-            <div class="portfolio-img">
-              <img src="images/science graphics/gel electrophoresis westernblot.png" alt="15ml Falcon Tube">
-            </div>
-            <div class="portfolio-text">
-              <h3>Gel Electrophoresis</h3>
-              <a class="btn" href="images/science graphics/gel electrophoresis westernblot.png" data-lightbox="portfolio">+</a>
-            </div>
-          </div>
-        </div>    
-
-        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item graphics wow fadeInUp" data-wow-delay="0.4s">
-          <div class="portfolio-wrap">
-            <div class="portfolio-img">
-              <img src="images/science graphics/westernblot sandwich.png" alt="15ml Falcon Tube">
-            </div>
-            <div class="portfolio-text">
-              <h3>Westernblot Sandwich</h3>
-              <a class="btn" href="images/science graphics/westernblot sandwich.png" data-lightbox="portfolio">+</a>
-            </div>
-          </div>
-        </div>      
-
-        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item graphics wow fadeInUp" data-wow-delay="0.4s">
-          <div class="portfolio-wrap">
-            <div class="portfolio-img">
-              <img src="images/science graphics/western blot transfer.png" alt="15ml Falcon Tube">
-            </div>
-            <div class="portfolio-text">
-              <h3>Westernblot Transfer</h3>
-              <a class="btn" href="images/science graphics/western blot transfer.png" data-lightbox="portfolio">+</a>
-            </div>
-          </div>
-        </div> 
-
-        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item graphics wow fadeInUp" data-wow-delay="0.4s">
-          <div class="portfolio-wrap">
-            <div class="portfolio-img">
-              <img src="images/science graphics/mouse brain.png" alt="15ml Falcon Tube">
-            </div>
-            <div class="portfolio-text">
-              <h3>Mouse Brain</h3>
-              <a class="btn" href="images/science graphics/mouse brain.png" data-lightbox="portfolio">+</a>
-            </div>
-          </div>
-        </div> 
-
-        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item graphics wow fadeInUp" data-wow-delay="0.4s">
-          <div class="portfolio-wrap">
-            <div class="portfolio-img">
-              <img src="images/science graphics/hemisphere.png" alt="15ml Falcon Tube">
-            </div>
-            <div class="portfolio-text">
-              <h3>Mouse Hemisphere</h3>
-              <a class="btn" href="images/science graphics/hemisphere.png" data-lightbox="portfolio">+</a>
-            </div>
-          </div>
-        </div> 
-
-      </div>
-    </div>
-
-  <!--Publication start-->
-  <div class="publication" id="publication">
-    <div class="container">
-      <div class="section-header text-center wow zoomIn" data-wow-delay="0.5s">
-        <p>What did I do in Science</p>
-        <h2>My Publication</h2>
-      </div>
-
-      <div class="row">
-        
-        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
-          <div class="publication-item">
-            <div class="publication-header">
-              <div class="publication-title">
-                <h2>Ribosomes in RNA Granules Are Stalled on mRNA Squences That Are Consensus Sites for FMRP Association</h2>
-              </div>
-            </div>
-            
-            <div class="publication-body">
-              <div class="publication description">
-                <p>
-                  In neurons, reversible stalling of polysomes localizes to the granule fraction (the polysome pellet from sucrose gradients), enriched in FMRP and Upf1. Immunoblotting, cryo-EM, and ribosome profiling of 5-day rat brain granules show ribosomes stalled predominantly in the hybrid state. Profiling reveals longer footprint reads on FMRP-targeted, cytoskeletal, and RNA-binding mRNAs, mapping to reproducible FMRP-associated motifs. These data suggest sequence-dependent elongation arrest regulates local translation.
-                <p>
-              </div>
-            </div>
-            
-            <div class="publication-footer">
-              <div class="publication-action">
-                <a class="btn" href="https://www.jneurosci.org/content/43/14/2440.abstract">link</a>
-              </div>
-            </div>
-          </div>  
-        </div>
-
-        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.6s">
-          <div class="publication-item">
-            <div class="publication-header">
-              <div class="publication-title">
-                <h2>Puromycin reveals a distinct conformation of neuronal ribosomes</h2>
-              </div>
-            </div>
-            <div class="publication-body">
-              <div class="publication description">
-                <p>
-                  Puromycin normally enters the nascent peptide via the ribosome’s peptidyl transferase and then dissociates, but in neurons it remains trapped in a subset of hybrid-state ribosomes even without inhibitors. Biochemical assays and cryo-EM show these stalled ribosomes resist anisomycin block, allowing a simple puromycin-competition assay to measure stalling—over half of nascent chains in early hippocampal cultures are caught this way. This both validates puromycin for localizing stalled polysomes and reveals a neuron-specific mechanism of ribosome arrest.
-                <p>
-              </div>
-            </div>
-            <div class="publication-footer">
-              <div class="publication-action">
-                <a class="btn" href="https://www.pnas.org/doi/abs/10.1073/pnas.2306993121">link</a>
-              </div>
-            </div>
-          </div>  
-        </div>
-
-        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.6s">
-          <div class="publication-item">
-            <div class="publication-header">
-              <div class="publication-title">
-                <h2>FMRP Regulates Neuronal RNA Granules Containing Stalled Ribosomes, Not Where Ribosomes Stall</h2>
-              </div>
-            </div>
-            <div class="publication-body">
-              <div class="publication description">
-                <p>
-                  FMRP-rich neuronal RNA granules underpin local protein synthesis by housing stalled polysomes. In P5 FMRP-null mice, ribosome structure and stalling sites remain unchanged, but granules contain fewer FMRP-targeted mRNAs and are reduced in number; the remaining granules resist mGluR-LTD reactivation, highlighting FMRP’s role in granule maintenance rather than stall initiation.
-                <p>
+    <!-- Hero Start -->
+    <section class="hero" id="home">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-6">
+            <div class="hero-content">
+              <div class="hero-text">
+                <p>I'm</p>
+                <h1>Jewel Li!</h1>
+                <h2></h2>
+                <div class="pop-texts">
+                  <span>Science</span>
+                  <span>Data Analyst</span>
+                  <span>Graphic Design</span>
                 </div>
-            </div>
-            <div class="publication-footer">
-              <div class="publication-action">
-                <a class="btn" href="https://www.biorxiv.org/content/10.1101/2025.02.21.639553v1">link</a>
+              </div>
+              <div class="hero-btn">
+                <a class="btn" href="https://github.com/jewel1117lee"
+                  >Git-hub</a
+                >
+                <a
+                  class="btn"
+                  href="https://www.linkedin.com/in/jewel-tian-yi-li/"
+                  >LinkedIn</a
+                >
               </div>
             </div>
-          </div>  
+          </div>
+          <div class="col-sm-12 col-md-6 d-none d-md-block">
+            <div class="hero-image">
+              <img src="images/self_portrait.png" alt="Hero Image" />
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+    <!-- Hero End -->
 
+    <!-- About Start -->
+    <section class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="about-img">
+              <img src="images/about.jpg" alt="Image" />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about-content">
+              <div class="section-header text-left">
+                <p>Who Am I</p>
+                <h2>About Me</h2>
+              </div>
+              <div class="about-text">
+                <p>
+                  I am a scientist, coder, and artist driven by curiosity,
+                  creativity, and the thrill of innovation. With a solid
+                  foundation in biotechnology and computational skills, I thrive
+                  at the intersection of biology, technology, and design—always
+                  looking for exciting new ways to solve challenging problems.
+                  My passion for scientific discovery combined with my coding
+                  expertise enables me to transform complex data into meaningful
+                  insights, while my artistic side ensures I present ideas
+                  clearly and creatively. I enjoy collaborative environments,
+                  value continuous learning, and am eager to contribute to a
+                  dynamic team where I can leverage my interdisciplinary skills
+                  to make a real impact.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About End -->
+
+    <!-- Skills Start -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <div
+          class="section-header text-center wow zoomIn"
+          data-wow-delay="0.4s"
+        >
+          <p>What I learned</p>
+          <h2>My Technical Skills</h2>
+        </div>
+        <div class="skills-grid">
+          <!-- Skill items go here -->
+        </div>
+      </div>
+    </section>
+    <!-- Skills End -->
+
+    <!-- Portfolio Start -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <div
+          class="section-header text-center wow zoomIn"
+          data-wow-delay="0.1s"
+        >
+          <p>Portfolio</p>
+          <h2>My Portfolio</h2>
+          <h4>All of the graphics here are self-designed using Adobe</h4>
+        </div>
+        <ul id="portfolio-filter">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".protocols">Protocols</li>
+          <li data-filter=".graphics">Graphics</li>
+        </ul>
+        <div class="portfolio-container">
+          <!-- Portfolio items go here -->
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio End -->
+
+    <!-- Publication Start -->
+    <div class="publication" id="publication">
+      <div class="container">
+        <div
+          class="section-header text-center wow zoomIn"
+          data-wow-delay="0.5s"
+        >
+          <p>What did I do in Science</p>
+          <h2>My Publication</h2>
+        </div>
+        <div class="row">
+          <!-- Publication items go here -->
+        </div>
       </div>
     </div>
-  <!--Publication end-->
+    <!-- Publication End -->
 
-  <!--Education start-->
-  <div class="education" id="education">
-    <div class="container">
-      <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-        <p>My Training</p>
-        <h2>My Experience in Science & Coding</h2>
-      </header>
-      <div class="timeline">
-        <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-          <div class="timeline-text">
-            <div class="timeline-date">2023 - 2025</div>
-            <h2>Advanced Coding &amp; Data Analysis</h2>
-            <h4>Coding Projects and Workshops</h4>
-            <ul>
-              <li>Built bioinformatics pipelines in Python &amp; R to process large dataset</li>
-              <li>Completed Intro to Machine Learning &amp; CNNs &amp; Transcriptomics Bootcamp”</li>
-              <li>Began to use Slurm script to process mil+ RNA sequencess</li>
-            </ul>
-          </div>
+    <!-- Education Start -->
+    <div class="education" id="education">
+      <div class="container">
+        <header
+          class="section-header text-center wow zoomIn"
+          data-wow-delay="0.1s"
+        >
+          <p>My Training</p>
+          <h2>My Experience in Science & Coding</h2>
+        </header>
+        <div class="timeline">
+          <!-- Timeline items go here -->
         </div>
-
-        <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-          <div class="timeline-text">
-            <div class="timeline-date">2021 – 2024</div>
-            <h2>M.Sc. in Neuroscience</h2>
-            <h4>Ribosomes in RNA Granules Are Stalled on mRNA Squences That Are Consensus Sites for FMRP Association</h4>
-            <ul>
-              <li>Facilitated multiple projects between 3 different collaborator teams (CryoEM, Bioinformatics and Machine Learning) to ensure smooth runing</li>
-              <li>Presented and at IPN, SFN 2025(largest neuroscience conference) and more</li>
-              <li>Create and communicated teaching plans with TAs and improved 20+ students' genetic comprehension during weekly TA session</li>
-              <li>Mastered techniques in biochemistry, cell culture, immunocytochemistry and all</li>
-              <li>Co-authored and authored 3 peer-reviewed publications</li>
-            </ul>
-          </div>
-        </div>
-        
-        <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-          <div class="timeline-text">
-            <div class="timeline-date">2018 – 2021</div>
-            <h2>B.A. in Biology (Cellular &amp; Molecular)</h2>
-            <h4>Barnard College, Columbia University</h4>
-            <ul>
-              <li>Graduated with honors (GPA 3.64)</li>
-              <li>Specialized in stem-cell &amp; biochemistry techniques</li>
-              <li>Took courses in Python &amp; MATLAB</li>
-              <li>Presented CRISPR poster to 180+ interdisciplinary peers</li>
-              <li>Tutored in mechanical physics and TA’d neuroscience labs</li>
-            </ul>
-          </div>
-        </div>
-
       </div>
     </div>
-  </div>
-  <!--Publication Ends-->
+    <!-- Education End -->
 
-  <!--Contact-->
-  <!-- Contact Start -->
-  <div class="contact wow fadeInUp" data-wow-delay="0.3s" id="contact">
-    <div class="container-fluid">
+    <!-- Contact Start -->
+    <div class="contact wow fadeInUp" data-wow-delay="0.3s" id="contact">
+      <div class="container-fluid">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-4"></div>
-                <div class="col-md-8">
-                    <div class="contact-form">
-                        <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                            <div class="control-group">
-                                <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
-                                <p class="help-block"></p>
-                            </div>
-                            <div class="control-group">
-                                <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
-                                <p class="help-block"></p>
-                            </div>
-                            <div class="control-group">
-                                <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
-                                <p class="help-block"></p>
-                            </div>
-                            <div class="control-group">
-                                <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
-                                <p class="help-block"></p>
-                            </div>
-                            <div>
-                                <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+          <div class="row align-items-center">
+            <div class="col-md-4"></div>
+            <div class="col-md-8">
+              <div class="contact-form">
+                <form
+                  name="sentMessage"
+                  id="contactForm"
+                  novalidate="novalidate"
+                >
+                  <div class="control-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                      required="required"
+                      data-validation-required-message="Please enter your name"
+                    />
+                  </div>
+                  <div class="control-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Your Email"
+                      required="required"
+                      data-validation-required-message="Please enter your email"
+                    />
+                  </div>
+                  <div class="control-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="subject"
+                      placeholder="Subject"
+                      required="required"
+                      data-validation-required-message="Please enter a subject"
+                    />
+                  </div>
+                  <div class="control-group">
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      placeholder="Message"
+                      required="required"
+                      data-validation-required-message="Please enter your message"
+                    ></textarea>
+                  </div>
+                  <div>
+                    <button class="btn" type="submit" id="sendMessageButton">
+                      Send Message
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-  </div>
-  <!-- Contact End -->  
+    <!-- Contact End -->
 
-  <!-- Footer Start -->
-  <div class="footer wow fadeIn" data-wow-delay="0.3s">
-    <div class="container-fluid">
+    <!-- Footer Start -->
+    <div class="footer wow fadeIn" data-wow-delay="0.3s">
+      <div class="container-fluid">
         <div class="container">
-            <div class="footer-info">
-                <h2>Jewel Li</h2>
-                <div class="footer-menu">
-                    <p>lijewel1117@gmail.com</p>
-                    <p>info@example.com</p>
-                </div>
+          <div class="footer-info">
+            <h2>Jewel Li</h2>
+            <div class="footer-menu">
+              <p>lijewel1117@gmail.com</p>
+              <p>info@example.com</p>
             </div>
+          </div>
         </div>
         <div class="container copyright">
-            <p>&copy; <a href="#">Jewel's Website</a>, All Right Reserved | Designed by: Jewel | Base Code from <a href="https://htmlcodex.com">HTML Codex</a></p>
+          <p>
+            &copy; <a href="#">Jewel's Website</a>, All Right Reserved |
+            Designed by: Jewel | Base Code from
+            <a href="https://htmlcodex.com">HTML Codex</a>
+          </p>
         </div>
+      </div>
     </div>
-  </div>
-  <!-- Footer End -->
+    <!-- Footer End -->
 
+    <!-- Back to top button -->
+    <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-  <!-- Back to top button -->
-  <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
 
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
 
-
-<!-- 1) jQuery (required by everything below) -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
-<!-- 2) imagesLoaded (so Isotope waits for images) -->
-<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-
-<!-- 3) Popper.js & Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
-<!-- 4) Isotope (filtering/layout) -->
-<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-
-<!-- 5) Lightbox2 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
-
-<!-- 6) WOW.js (scroll-triggered CSS reveals) -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-<script>
-    new WOW({
-    boxClass:      "wow",            // the class to watch for
-    animateClass:  "animate__animated", // Animate.css v4 uses this
-    offset:        100,
-    mobile:        true,
-    live:          true
-  }).init();
-
-  // 7.2 Initialize Isotope after images have loaded
-  var $grid = $('.portfolio-container').imagesLoaded(function() {
-    $grid.isotope({
-      itemSelector: '.portfolio-item',
-      layoutMode:   'fitRows'
-    });
-  });
-
-  // 7.3 Portfolio filter buttons
-  $('#portfolio-filter').on('click', 'li', function() {
-    $('#portfolio-filter li').removeClass('filter-active');
-    $(this).addClass('filter-active');
-    var filterValue = $(this).attr('data-filter');
-    $grid.isotope({ filter: filterValue });
-  });
-
-  // 7.4 Back-to-top button show/hide & smooth scroll
-  $(window).on('scroll', function() {
-    if ($(this).scrollTop() > 200) {
-      $('.back-to-top').fadeIn('fast');
-    } else {
-      $('.back-to-top').fadeOut('fast');
-    }
-  });
-
-  $('.back-to-top').on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: 0 }, 600);
-  });
-</script>
-</body>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
-
-
