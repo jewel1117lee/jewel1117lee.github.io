@@ -15,9 +15,10 @@
   
   <!--Link the website with style sheet-->>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
-/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"/>
 </head>
+
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
  
@@ -92,7 +93,7 @@
             <div class="section-header text left">
               <p>Who Am I</p>
               <!--You probably should write sth about yourself-->
-              <h2>About Me<h2>
+              <h2>About Me</h2>
             </div>
             <div class="about-text">
               <p>
@@ -601,7 +602,7 @@
 
   <!--Contact-->
   <!-- Contact Start -->
-  <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
+  <div class="contact wow fadeInUp" data-wow-delay="0.3s" id="contact">
     <div class="container-fluid">
         <div class="container">
             <div class="row align-items-center">
@@ -645,13 +646,13 @@
             <div class="footer-info">
                 <h2>Jewel Li</h2>
                 <div class="footer-menu">
-                    <p>info@example.com</p>
+                    <p>lijewel1117@gmail.com</p>
                     <p>info@example.com</p>
                 </div>
             </div>
         </div>
         <div class="container copyright">
-            <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved | Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
+            <p>&copy; <a href="#">Jewel's Website</a>, All Right Reserved | Designed by: Jewel | Base Code from <a href="https://htmlcodex.com">HTML Codex</a></p>
         </div>
     </div>
   </div>
@@ -663,63 +664,63 @@
 
 
 
+<!-- 1) jQuery (required by everything below) -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-  <!-- 1) jQuery (required by everything below) -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!-- 2) imagesLoaded (so Isotope waits for images) -->
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
-  <!-- 2) imagesLoaded (so Isotope waits for images) -->
-  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<!-- 3) Popper.js & Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-  <!-- 3) Popper.js & Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!-- 4) Isotope (filtering/layout) -->
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
-  <!-- 4) Isotope (filtering/layout) -->
-  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<!-- 5) Lightbox2 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 
-  <!-- 5) Lightbox2 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+<!-- 6) WOW.js (scroll-triggered CSS reveals) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+    new WOW({
+    boxClass:      "wow",            // the class to watch for
+    animateClass:  "animate__animated", // Animate.css v4 uses this
+    offset:        100,
+    mobile:        true,
+    live:          true
+  }).init();
 
-  <!-- 6) WOW.js (Animate.css reveals) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-
-  <!-- 7) Your initialization -->
-  <script>
-
-    // Initialize WOW.js
-    new WOW().init();
-
-    // Initialize Isotope after imagesLoaded
-    var $grid = $('.portfolio-container').imagesLoaded(function() {
-      $grid.isotope({
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
-      });
+  // 7.2 Initialize Isotope after images have loaded
+  var $grid = $('.portfolio-container').imagesLoaded(function() {
+    $grid.isotope({
+      itemSelector: '.portfolio-item',
+      layoutMode:   'fitRows'
     });
+  });
 
-    // Filter on click
-    $('#portfolio-filter').on('click', 'li', function() {
-      $('#portfolio-filter li').removeClass('filter-active');
-      $(this).addClass('filter-active');
-      var filterValue = $(this).attr('data-filter');
-      $grid.isotope({ filter: filterValue });
-    });
+  // 7.3 Portfolio filter buttons
+  $('#portfolio-filter').on('click', 'li', function() {
+    $('#portfolio-filter li').removeClass('filter-active');
+    $(this).addClass('filter-active');
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
+  });
 
-    $(window).on('scroll', function() {
-      if ($(this).scrollTop() > 200) {
-        $('.back-to-top').fadeIn('fast');
-      } else {
-        $('.back-to-top').fadeOut('fast');
-      }
-    });
+  // 7.4 Back-to-top button show/hide & smooth scroll
+  $(window).on('scroll', function() {
+    if ($(this).scrollTop() > 200) {
+      $('.back-to-top').fadeIn('fast');
+    } else {
+      $('.back-to-top').fadeOut('fast');
+    }
+  });
 
-    $('.back-to-top').on('click', function(e) {
-      e.preventDefault();
-      $('html, body').animate({ scrollTop: 0 }, 600);
-      return false;
-    });
-    
-  </script>
+  $('.back-to-top').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, 600);
+  });
+</script>
 </body>
 </html>
 

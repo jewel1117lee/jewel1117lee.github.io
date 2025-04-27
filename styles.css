@@ -129,6 +129,9 @@ a:focus {
     color: #414141;
 }
 
+.wow { visibility: hidden; }
+.wow.animated { visibility: visible; }
+
 /**********************************/
 /*********** Nav Bar CSS **********/
 /**********************************/
