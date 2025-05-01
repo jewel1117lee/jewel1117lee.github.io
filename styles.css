@@ -722,6 +722,15 @@ a:focus {
   align-items: center;
   justify-content: center;
 }
+
+/* ─── Mobile (≤576px) ─── */
+@media (max-width: 576px) {
+    .portfolio-item {
+      /* force each item to take the full row */
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
 /******************************/
 
 
