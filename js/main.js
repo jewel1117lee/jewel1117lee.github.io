@@ -56,19 +56,7 @@
         }
     });
     
-    
-    // Typed Initiate
-    if ($('.hero .hero-text h2').length == 1) {
-        var typed_strings = $('.hero .hero-text .typed-text').text();
-        var typed = new Typed('.hero .hero-text h2', {
-            strings: typed_strings.split(', '),
-            typeSpeed: 100,
-            backSpeed: 20,
-            smartBackspace: false,
-            loop: true
-        });
-    }
-    
+
     
     // Skills
     $('.skills').waypoint(function () {
@@ -103,11 +91,21 @@
         layoutMode: 'fitRows'
     });
 
+    // Wait for images to load before laying out
+    $portfolioContainer.imagesLoaded(function () {
+        portfolioIsotope.isotope('layout');
+    });
+
     $('#portfolio-filter li').on('click', function () {
         $("#portfolio-filter li").removeClass('filter-active');
         $(this).addClass('filter-active');
-        portfolioIsotope.isotope({filter: $(this).data('filter')});
+        
+        var filterValue = $(this).data('filter');
+        portfolioIsotope.isotope({ filter: filterValue });
+        
+        // 💡 Recalculate layout
+        portfolioIsotope.isotope('layout');
     });
-    
+
 })(jQuery);
 
