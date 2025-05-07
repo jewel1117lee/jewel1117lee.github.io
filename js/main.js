@@ -56,8 +56,6 @@
         }
     });
     
-
-    
     // Skills
     $('.skills').waypoint(function () {
         $('.progress .progress-bar').each(function () {
@@ -85,15 +83,12 @@
     // 🛠 End of Skills Circular Donuts Animation
 
 
-    // Portfolio filter
+   // Portfolio filter
+    var $portfolioContainer = $('.portfolio-container');
+
     var portfolioIsotope = $('.portfolio-container').isotope({
         itemSelector: '.portfolio-item',
         layoutMode: 'fitRows'
-    });
-
-    // Wait for images to load before laying out
-    $portfolioContainer.imagesLoaded(function () {
-        portfolioIsotope.isotope('layout');
     });
 
     $('#portfolio-filter li').on('click', function () {
